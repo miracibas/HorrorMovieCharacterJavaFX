@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" minHeight="500.0" minWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.horrorcharacterjavafx.SecondaryController">
+    <children>
+        <Label text="List Of Characters" />
+        <ListView fx:id="characterListView" prefHeight="200.0" prefWidth="200.0" />
+        <HBox alignment="CENTER" spacing="10.0">
+            <children>
+                <Button onAction="#addCharacter" text="Add New" />
+                <Button onAction="#editCharacter" text="Edit" />
+                <Button onAction="#deleteCharacter" text="Delete" />
+            </children>
+        </HBox>
+        <Label fx:id="messageLabel" />
+        <Button fx:id="secondaryButton" onAction="#switchToPrimary" text="Back to Creation" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
